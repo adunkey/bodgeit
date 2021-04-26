@@ -1,0 +1,54 @@
+version: "1"
+project:
+  organization: poc151
+  name: adunkey/bodgeit
+  branch: master
+  revision:
+    name: 54ac9c577221b6e9aebfe1759b6b69bf84ade2c6
+    date: "2021-04-26T03:49:55-04:00"
+  projectDir: /apps/bodgeit
+  captureDir: /apps/bodgeit/.synopsys/polaris
+capture:
+  build:
+    cleanCommands:
+    - shell: [ant, -f, build.xml, clean]
+    buildCommands:
+    - shell: [ant, -f, build.xml]
+  fileSystem:
+    ears:
+      extensions: [ear]
+      files:
+      - directory: .
+    java:
+      files:
+      - directory: .
+    javascript:
+      files:
+      - directory: .
+      - excludeRegex: node_modules|bower_components|vendor
+    php:
+      files:
+      - directory: .
+    python:
+      files:
+      - directory: .
+    ruby:
+      files:
+      - directory: .
+    wars:
+      extensions: [war]
+      files:
+      - directory: .
+analyze:
+  mode: central
+  coverity:
+    caching:
+      jars: enable
+      pfi: enable
+      rws: disable
+      tu-caching: disable
+    usebudaforjavadotnet: disable
+install:
+  coverity:
+    version: 2021.01-1
+serverUrl: https://poc151.polaris.synopsys.com
