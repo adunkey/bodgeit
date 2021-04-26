@@ -1,7 +1,7 @@
 <<<<<<< HEAD
 The Vincenzo Baggio 101815  BodgeIt Store is a vulnerable web application which is currently aimed at people who are new to pen testing.
 =======
-The VT BodgeIt Store is a vulnerable web application which is currently aimed at people who are new to pen testing.
+The VT 10 BodgeIt Store is a vulnerable web application which is currently aimed at people who are new to pen testing.
 >>>>>>> d4097dc6c0ac350454e207e5c7b913186069e7e3
 
 > ### Please note that The BodgeIt Store is no longer being worked on
