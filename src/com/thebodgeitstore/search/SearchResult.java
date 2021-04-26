@@ -8,7 +8,7 @@ public class SearchResult {
     private String desc = "";
     private String type = "";
     private String price = "";
-    
+    private String blank =""; 
     //Constructors
     public SearchResult(){}
     
